@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvappname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:text="APP NAME : HUSTLE4WORK"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"></TextView>
+    <TextView
+        android:id="@+id/tvversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:text="Version : 1.0"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:text="About : "
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"></TextView>
+    <TextView
+        android:id="@+id/tvdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="Hustle4Work is an Android application designed to connect job seekers with employers. Such applications typically aim to facilitate the job search and recruitment process. Users looking for employment can browse job listings, submit applications, and interact with potential employers. Employers, on the other hand, can post job opportunities, review applications, and find suitable candidates."
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"></TextView>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Gery"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_detail_applied"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="15dp"
+        app:cardElevation="14dp"
+android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="32dp"
+
+        android:layout_marginStart="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/user_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twelve_dp"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_usernameApplied"
+                    android:layout_width="wrap_content"
+
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="UserName : Ankush"
+
+                    />
+
+            <TextView
+                android:id="@+id/tv_emailApplied"
+                android:layout_width="wrap_content"
+
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+
+                android:gravity="center_vertical"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="Email : Ankush@gmail.com"
+
+                />
+            <TextView
+                android:id="@+id/tv_addressApplied"
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+
+                android:gravity="center_vertical"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="Address : Ankush"
+
+                />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="invisible"
+        android:layout_marginTop="2dp"
+        android:background="@color/Gery"
+        app:layout_constraintTop_toBottomOf="@+id/cv_detail_applied"
+        ></View>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:fillViewport="true">
+
+       <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/background"
+           >
+
+
+              <ImageView
+                  android:id="@+id/iv_back"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_marginTop="@dimen/fifty_dp"
+                  android:layout_marginLeft="@dimen/thirty_two_dp"
+                  android:src="@drawable/back"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:tint="@color/maintxtgrey"></ImageView>
+
+
+
+
+
+
+
+              <TextView
+                  android:id="@+id/tv_createaccount"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/create_acnt"
+                  android:textSize="@dimen/thirty_sp"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:fontFamily="@font/poppins_semibold"
+                  app:layout_constraintTop_toBottomOf="@+id/iv_back"
+                  app:layout_constraintStart_toStartOf="parent"
+                  android:layout_marginTop="@dimen/fifty_dp"
+                  android:layout_marginLeft="@dimen/thirty_two_dp"
+                  android:gravity="center"/>
+
+              <TextView
+                  android:id="@+id/tvinput"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/tvregistertext"
+                  android:textSize="@dimen/eighteen_sp"
+                  android:textColor="@color/maintxtgrey"
+                  android:fontFamily="@font/poppins_medium"
+                  app:layout_constraintTop_toBottomOf="@id/tv_createaccount"
+                  android:layout_marginLeft="@dimen/thirty_two_dp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  android:gravity="center"/>
+
+
+              <LinearLayout
+                  android:id="@+id/user_ll"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginStart="32dp"
+                  android:layout_marginEnd="32dp"
+                  android:padding="@dimen/twelve_dp"
+                  android:background="@drawable/edittext_rounded_background"
+                  app:layout_constraintTop_toBottomOf="@+id/tvinput"
+                  android:orientation="horizontal">
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/user"
+
+                                android:layout_marginLeft="5dp"
+                                app:tint="@color/white"></ImageView>
+                     </LinearLayout>
+
+
+                     <EditText
+                         android:id="@+id/editUser"
+                         android:layout_width="@dimen/zero_dp"
+                         android:layout_weight="9"
+                         android:background="@android:color/transparent"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:gravity="center_vertical"
+                         android:fontFamily="@font/poppins_regular"
+                         android:textColorHint="@color/white"
+                         android:layout_marginLeft="10dp"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/username"
+
+
+
+                         />
+              </LinearLayout>
+
+
+
+              <LinearLayout
+                  android:id="@+id/email_ll"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginStart="32dp"
+                  android:layout_marginEnd="32dp"
+                  android:padding="@dimen/twelve_dp"
+                  android:background="@drawable/edittext_rounded_background"
+                  app:layout_constraintTop_toBottomOf="@+id/user_ll"
+                  android:orientation="horizontal">
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/mail"
+
+                                android:layout_marginLeft="5dp"
+                                app:tint="@color/white"></ImageView>
+                     </LinearLayout>
+
+
+                     <EditText
+                         android:id="@+id/editEmail"
+                         android:layout_width="@dimen/zero_dp"
+                         android:layout_weight="9"
+                         android:background="@android:color/transparent"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:gravity="center_vertical"
+                         android:fontFamily="@font/poppins_regular"
+                         android:textColorHint="@color/white"
+                         android:layout_marginLeft="10dp"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/email"
+
+
+
+                         />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/phone_ll"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginStart="32dp"
+                  android:layout_marginEnd="32dp"
+                  android:padding="@dimen/twelve_dp"
+                  android:background="@drawable/edittext_rounded_background"
+                  app:layout_constraintTop_toBottomOf="@+id/email_ll"
+                  android:orientation="horizontal">
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/smartphone_call"
+
+                                android:layout_marginLeft="5dp"
+                                app:tint="@color/white"></ImageView>
+                     </LinearLayout>
+
+
+                     <EditText
+                         android:id="@+id/editphone"
+                         android:layout_width="@dimen/zero_dp"
+                         android:layout_weight="9"
+                         android:background="@android:color/transparent"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:gravity="center_vertical"
+                         android:fontFamily="@font/poppins_regular"
+                         android:textColorHint="@color/white"
+                         android:layout_marginLeft="10dp"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/phone_no"
+
+
+
+                         />
+              </LinearLayout>
+
+
+              <LinearLayout
+                  android:id="@+id/password_ll"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginStart="32dp"
+                  android:layout_marginEnd="32dp"
+                  android:padding="@dimen/twelve_dp"
+                  android:background="@drawable/edittext_rounded_background"
+                  app:layout_constraintTop_toBottomOf="@+id/phone_ll"
+                  android:orientation="horizontal">
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/password"
+
+                                android:layout_marginLeft="5dp"
+                                app:tint="@color/white"></ImageView>
+                     </LinearLayout>
+
+
+                     <EditText
+                         android:id="@+id/editpasswd"
+                         android:layout_width="@dimen/zero_dp"
+                         android:layout_weight="9"
+                         android:background="@android:color/transparent"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:fontFamily="@font/poppins_regular"
+                         android:textColorHint="@color/white"
+                         android:layout_marginLeft="10dp"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/password"
+
+
+
+                         />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/cfrmpassword_ll"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginStart="32dp"
+                  android:layout_marginEnd="32dp"
+                  android:padding="@dimen/twelve_dp"
+                  android:background="@drawable/edittext_rounded_background"
+                  app:layout_constraintTop_toBottomOf="@+id/password_ll"
+                  android:orientation="horizontal">
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/password"
+
+                                android:layout_marginLeft="5dp"
+                                app:tint="@color/white"></ImageView>
+                     </LinearLayout>
+
+
+                     <EditText
+                         android:id="@+id/editcnfmpasswd"
+                         android:layout_width="@dimen/zero_dp"
+                         android:layout_weight="9"
+                         android:background="@android:color/transparent"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:fontFamily="@font/poppins_regular"
+                         android:textColorHint="@color/white"
+                         android:layout_marginLeft="10dp"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/confrmpassword"
+
+
+
+                         />
+              </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/address_ll"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="30dp"
+                  android:layout_marginStart="32dp"
+                  android:layout_marginEnd="32dp"
+                  android:padding="@dimen/twelve_dp"
+                  android:background="@drawable/edittext_rounded_background"
+                  app:layout_constraintTop_toBottomOf="@+id/cfrmpassword_ll"
+                  android:orientation="horizontal">
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/pin"
+
+                                android:layout_marginLeft="5dp"
+                                app:tint="@color/white"></ImageView>
+                     </LinearLayout>
+
+
+                     <EditText
+                         android:id="@+id/editaddress"
+                         android:layout_width="@dimen/zero_dp"
+                         android:layout_weight="9"
+                         android:background="@android:color/transparent"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:fontFamily="@font/poppins_regular"
+                         android:textColorHint="@color/white"
+                         android:layout_marginLeft="10dp"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/address"
+
+
+
+                         />
+              </LinearLayout>
+              <TextView
+                  android:id="@+id/tvusertype"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/tvusertype"
+                  android:textSize="@dimen/eighteen_sp"
+                  android:layout_marginTop="25dp"
+                  android:textColor="@color/maintxtgrey"
+                  android:fontFamily="@font/poppins_medium"
+                  app:layout_constraintTop_toBottomOf="@id/address_ll"
+                  android:layout_marginLeft="@dimen/thirty_two_dp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  android:gravity="center"/>
+              <LinearLayout
+                  android:id="@+id/usertype_ll"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="@dimen/thirty_two_dp"
+                  android:layout_marginRight="@dimen/thirty_two_dp"
+                  android:layout_marginTop="25dp"
+                  app:layout_constraintTop_toBottomOf="@id/tvusertype">
+
+                     <TextView
+                         android:id="@+id/editemployer"
+                         android:layout_width="@dimen/zero_dp"
+                         android:layout_weight="9"
+                         android:background="@drawable/edittext_rounded_background"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:gravity="center"
+                         android:padding="@dimen/twelve_dp"
+                         android:fontFamily="@font/poppins_regular"
+                         android:textColorHint="@color/white"
+
+                         android:layout_marginRight="5dp"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/employer"
+
+
+
+                         />
+
+                     <TextView
+                         android:id="@+id/editjobseeker"
+                         android:layout_width="@dimen/zero_dp"
+                         android:layout_weight="9"
+                         android:background="@drawable/edittext_rounded_background"
+                         android:textColor="@color/white"
+                         android:textSize="20sp"
+                         android:gravity="center"
+                         android:padding="@dimen/twelve_dp"
+                         android:fontFamily="@font/poppins_regular"
+                         android:textColorHint="@color/white"
+                         android:layout_marginLeft="5dp"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/job_seeker"
+                         />
+              </LinearLayout>
+
+
+              <TextView
+                  android:id="@+id/btnSave"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/save"
+                  android:textSize="@dimen/fifteen_sp"
+                  android:background="@drawable/edittext_rounded_background"
+                  android:paddingLeft="@dimen/sixty_dp"
+                  android:paddingRight="@dimen/sixty_dp"
+                  android:paddingTop="@dimen/twelve_dp"
+                  android:paddingBottom="@dimen/twelve_dp"
+                  android:backgroundTint="@color/buttonmain"
+                  android:textColor="@color/background"
+                  android:textAllCaps="true"
+                  android:fontFamily="@font/poppins_semibold"
+                  app:layout_constraintTop_toBottomOf="@id/usertype_ll"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  android:layout_marginTop="@dimen/thirty_two_dp"
+                  />
+
+
+
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="40dp"
+                  app:layout_constraintTop_toBottomOf="@+id/btnSave"
+
+                  android:gravity="center_horizontal"
+                  >
+                     <TextView
+                         android:id="@+id/txtregisterNow"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/register_now"
+                         android:textColor="@color/maintxtgrey"
+                         android:fontFamily="@font/poppins_semibold"
+                         app:layout_constraintBottom_toBottomOf="parent"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         android:layout_marginBottom="@dimen/fourty_dp"
+                         android:gravity="center"/>
+
+                     <TextView
+                         android:id="@+id/txtSignin"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="@dimen/eight_dp"
+                         android:text="@string/sign_in"
+                         android:textStyle="bold"
+                         android:fontFamily="@font/poppins_regular"
+                         android:textColor="@color/lightblue"
+                         app:layout_constraintBottom_toBottomOf="parent"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         android:layout_marginBottom="@dimen/fourty_dp"
+                         android:gravity="center"/>
+
+              </LinearLayout>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

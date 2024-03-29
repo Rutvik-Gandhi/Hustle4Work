@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/Gery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+
+
+
+        <!-- TextView in Toolbar for Title -->
+        <TextView
+            android:id="@+id/tv_header_bs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Skill"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/closeIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/close"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/txtcolor"
+        app:layout_constraintTop_toBottomOf="@+id/custom_toolbar"></View>
+
+
+    <TextView
+        android:id="@+id/tv_skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/skill"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        ></TextView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_skill">
+
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/editskill"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/black"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:paddingTop="2dp"
+                android:layout_height="wrap_content"
+
+                />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <View
+        android:id="@+id/viewsecond"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/txtcolor"
+        app:layout_constraintTop_toBottomOf="@+id/cv_skill"></View>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_savesheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewsecond">
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/editSave"
+            android:layout_width="match_parent"
+            android:background="@color/background"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/save"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+
+            />
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/cv_savesheet">
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvClose"
+                android:layout_width="match_parent"
+                android:background="@color/background"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="@string/cancel"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/white"
+                android:layout_height="wrap_content"
+
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
