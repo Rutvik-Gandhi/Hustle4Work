@@ -23,7 +23,7 @@ To get started with the Hustle4Work Android application, follow these steps:
 1. **Clone the Repository:**
    Clone the repository to your local machine using the following command:
    ```sh
-   git clone https://github.com/yourusername/Hustle4Work.git
+   git clone https://github.com/Rutvik-Gandhi/Hustle4Work-Final-Capstone-Project-.git
 
 2. Open the Project:
 Open the project in Android Studio. Navigate to File -> Open and select the project's root directory.
