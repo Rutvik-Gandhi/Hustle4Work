@@ -1,4 +1,4 @@
-# Hustle4Work-Final-Capstone-Project
+# Hustle4Work
 
 # The project is an Android application aimed at facilitating job search and recruitment processes. 
 It includes features such as user authentication (login and signup), job feed, profile management, password reset, and submission of seeker forms. 
